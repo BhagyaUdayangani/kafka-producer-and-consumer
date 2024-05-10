@@ -1,0 +1,20 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: kafka-service
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: kafka-group
+    topic:
+      name: json-test
+
+#api:
+#  class:
+#    analytics-data-ingestion:
+#      header: /api/analytics-data-ingestion
+#      methods:
+#        search-users: v1/users/search
+#        add-users: v1/users/add
